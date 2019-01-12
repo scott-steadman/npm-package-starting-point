@@ -4,14 +4,18 @@
   "description": "",
   "main": "package-name.js",
   "scripts": {
-    "clean": "rm -rf node_modules lib",
-    "setup": "npm run setup-dirs ; npm run setup-babel ; npm run setup-eslint",
+    "build": "mkdir -p lib ; babel ./src -d ./lib",
+    "coverage": "jest --coverage",
+    "clean": "rm -rf node_modules lib coverage",
+    "lint": "eslint ./src",
+    "setup": "npm run setup-dirs ; npm run setup-babel ; npm run setup-eslint ; npm run setup-jest",
     "setup-dirs": "mkdir -p src",
     "setup-babel": "npm install --save-dev babel-cli babel-preset-env",
     "setup-eslint": "npm install --save-dev eslint ; ./node_modules/.bin/eslint --init",
-    "lint": "eslint ./src",
-    "build": "mkdir -p lib ; babel ./src -d ./lib",
-    "test": ""
+    "setup-jest": "mkdir -p test ; npm install --save-dev jest",
+    "test": "jest"
+  },
+  "jest": {
   },
   "repository": {
     "type": "git",
