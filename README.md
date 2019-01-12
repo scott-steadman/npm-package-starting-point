@@ -19,9 +19,9 @@ On Development Machine:
 
   # modify commit template if desired
   # modify README.md
-  # run npm init
-  git commit
 
+  npm run init
+  git commit
   git push
 ```
 
