@@ -20,7 +20,9 @@ On Development Machine:
   # modify commit template if desired
   # modify README.md
 
-  npm run init
+  npm run setup
+  # Configure ESLint to use Airbnb coding standards
+
   git commit
   git push
 ```

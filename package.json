@@ -5,10 +5,12 @@
   "main": "package-name.js",
   "scripts": {
     "clean": "rm -rf node_modules lib",
-    "setup": "npm run setup-dirs ; npm run setup-babel",
-    "setup-dirs": "mkdir src",
+    "setup": "npm run setup-dirs ; npm run setup-babel ; npm run setup-eslint",
+    "setup-dirs": "mkdir -p src",
     "setup-babel": "npm install --save-dev babel-cli babel-preset-env",
-    "build": "mkdir lib ; babel ./src -d ./lib",
+    "setup-eslint": "npm install --save-dev eslint ; ./node_modules/.bin/eslint --init",
+    "lint": "eslint ./src",
+    "build": "mkdir -p lib ; babel ./src -d ./lib",
     "test": ""
   },
   "repository": {
