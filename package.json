@@ -1,0 +1,23 @@
+{
+  "name": "package-name",
+  "version": "0.0.1",
+  "description": "",
+  "main": "package-name.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ss/package-name.git"
+  },
+  "keywords": [
+    "npm",
+    "javascript"
+  ],
+  "author": "Scott Steadman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ss/package-name/issues"
+  },
+  "homepage": "https://github.com/ss/package-name#readme"
+}
