@@ -17,13 +17,19 @@ On Development Machine:
 
   cd booyah.js
 
-  # modify commit template if desired
-  # modify README.md
 
   npm run setup
   # Configure ESLint to use Airbnb coding standards
 
-  git add .eslintrc.json
+  # modify commit template if desired
+  # modify README.md
+  # package.json updates:
+  # - change package-name to your packages name
+  # - fill in the description field
+  # - change github paths appropriately
+
+  git config commit.template .git_commit_template.txt
+  git add .eslintrc.json package-lock.json package.json
   git commit
   git push
 ```
