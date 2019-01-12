@@ -23,6 +23,7 @@ On Development Machine:
   npm run setup
   # Configure ESLint to use Airbnb coding standards
 
+  git add .eslintrc.json
   git commit
   git push
 ```

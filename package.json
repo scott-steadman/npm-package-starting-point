@@ -15,8 +15,7 @@
     "setup-jest": "mkdir -p test ; npm install --save-dev jest",
     "test": "jest"
   },
-  "jest": {
-  },
+  "jest": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ss/package-name.git"
