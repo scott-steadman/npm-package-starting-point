@@ -4,6 +4,11 @@
   "description": "",
   "main": "package-name.js",
   "scripts": {
+    "clean": "rm -rf node_modules lib",
+    "setup": "npm run setup-dirs ; npm run setup-babel",
+    "setup-dirs": "mkdir src",
+    "setup-babel": "npm install --save-dev babel-cli babel-preset-env",
+    "build": "mkdir lib ; babel ./src -d ./lib",
     "test": ""
   },
   "repository": {
